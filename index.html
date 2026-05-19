@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Brasileiro</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./app.js" defer></script>
+</head>
+<body class="dark">
+    <!-- Fundo fixo que ocupa 100% da viewport -->
+    <div class="background">
+        <div class="triangle-green"></div>
+        <div class="triangle-yellow"></div>
+        <div class="circle-blue"></div>
+    </div>
+
+    <main class="container">
+        <div class="topbar">
+            <h1>Cadastro Brasileiro <span class="flag-text">BR</span></h1>
+            
+            <label class="switch">
+                <input type="checkbox" id="themeToggle">
+                <span class="slider">
+                    <span class="icon moon">🌙</span>
+                    <span class="icon sun">☀️</span>
+                </span>
+            </label>
+        </div>
+
+        <div class="form-container">
+            <div class="row">
+                <div class="inputbox">
+                    <input type="text" id="nome" placeholder=" ">
+                    <label>Nome</label>
+                </div>
+                <div class="inputbox">
+                    <input type="email" id="email" placeholder=" ">
+                    <label>Email</label>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="inputbox">
+                    <input type="text" id="cep" maxlength="9" placeholder=" ">
+                    <label>CEP</label>
+                </div>
+                <div class="inputbox">
+                    <input type="text" id="endereco" placeholder=" ">
+                    <label>Endereço</label>
+                </div>
+                <div class="inputbox">
+                    <input type="text" id="numero" placeholder=" ">
+                    <label>Número</label>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="inputbox">
+                    <input type="text" id="bairro" placeholder=" ">
+                    <label>Bairro</label>
+                </div>
+                <div class="inputbox">
+                    <input type="text" id="cidade" list="listaCidades" placeholder=" ">
+                    <label>Cidade</label>
+                    <datalist id="listaCidades">
+                        <option value="São Paulo"><option value="Jandira"><option value="Barueri">
+                        <option value="Osasco"><option value="Carapicuíba"><option value="Itapevi"><option value="Cotia">
+                    </datalist>
+                </div>
+                <div class="inputbox">
+                    <input type="text" id="estado" placeholder=" ">
+                    <label>Estado</label>
+                </div>
+            </div>
+
+            <div class="buttons">
+                <button id="btnSalvar">Salvar</button>
+                <button id="btnAtualizar" hidden>Atualizar</button>
+            </div>
+        </div>
+
+        <section class="usuarios">
+            <h2>Usuários Salvos</h2>
+            <div id="listaUsuarios"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Cadastro Brasileiro BR - Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
