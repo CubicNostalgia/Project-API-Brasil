@@ -65,12 +65,12 @@ O projeto foi estruturado utilizando práticas de engenharia de software e organ
 
 A documentação estratégica e técnica do projeto pode ser acessada através dos links abaixo:
 
-- 🌐 [Home da Wiki](https://github.com/SEU_USUARIO/NOME_DO_REPOSITORIO/wiki)
-- 📄 [Termo de Abertura do Projeto (TAP)](https://github.com/SEU_USUARIO/NOME_DO_REPOSITORIO/wiki/TAP)
-- 📋 [Requisitos do Sistema (RF e RNF)](https://github.com/SEU_USUARIO/NOME_DO_REPOSITORIO/wiki/Requisitos)
-- 🗺️ [Roadmap e Ciclos de Entrega](https://github.com/SEU_USUARIO/NOME_DO_REPOSITORIO/wiki/Roadmap)
-- 🏗️ [Modelo Arquitetural e Fluxos](https://github.com/SEU_USUARIO/NOME_DO_REPOSITORIO/wiki/Arquitetura)
-- 📘 [Manual Completo de Execução Local](https://github.com/SEU_USUARIO/NOME_DO_REPOSITORIO/wiki/Manual-de-Uso)
+* 🌐 [Home da Wiki](https://github.com/CubicNostalgia/Project-API-Brasil/wiki)
+* 📄 [Termo de Abertura do Projeto (TAP)](https://github.com/CubicNostalgia/Project-API-Brasil/wiki/Termo-de-Abertura-de-Projetos-(TAP))
+* 📋 [Requisitos do Sistema (RF e RNF)](https://github.com/CubicNostalgia/Project-API-Brasil/wiki/Página-de-Requisitos)
+* [🗺️ Roadmap e Ciclos de Entrega](https://github.com/CubicNostalgia/Project-API-Brasil/wiki/Roadmap)
+* [🏗️ Modelo Arquitetural e Fluxos](https://github.com/CubicNostalgia/Project-API-Brasil/wiki/Arquitetura-e-UI-UX)
+* [📘 Manual Completo de Execução Local](https://github.com/CubicNostalgia/Project-API-Brasil/wiki/Manual-de-Uso)
 
 ---
 

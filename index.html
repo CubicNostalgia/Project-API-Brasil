@@ -14,10 +14,12 @@
         <div class="triangle-yellow"></div>
         <div class="circle-blue"></div>
     </div>
-
+    
     <main class="container">
         <div class="topbar">
             <h1>Cadastro Brasileiro <span class="flag-text">BR</span></h1>
+            
+            
             
             <label class="switch">
                 <input type="checkbox" id="themeToggle">
@@ -27,6 +29,7 @@
                 </span>
             </label>
         </div>
+        <h5> Para inserir todos os dados de endereço de forma automática é recomendado inserir apenas o CEP. </h5>
 
         <div class="form-container">
             <div class="row">
@@ -34,9 +37,19 @@
                     <input type="text" id="nome" placeholder=" ">
                     <label>Nome</label>
                 </div>
-                <div class="inputbox">
-                    <input type="email" id="email" placeholder=" ">
+                
+                <div class="inputbox email-box">
+                    <div class="email-input-wrapper">
+                        <input type="text" id="emailUser" placeholder=" ">
+                        <span class="email-domain" id="domainLabel">@gmail.com</span>
+                    </div>
                     <label>Email</label>
+                    <select id="emailProvider" class="select-provider">
+                        <option value="@gmail.com">Gmail</option>
+                        <option value="@hotmail.com">Hotmail</option>
+                        <option value="@outlook.com">Outlook</option>
+                        <option value="@yahoo.com">Yahoo</option>
+                    </select>
                 </div>
             </div>
 
@@ -44,14 +57,17 @@
                 <div class="inputbox">
                     <input type="text" id="cep" maxlength="9" placeholder=" ">
                     <label>CEP</label>
+                    <span class="error-msg" id="error-cep">CEP inválido</span>
                 </div>
                 <div class="inputbox">
                     <input type="text" id="endereco" placeholder=" ">
                     <label>Endereço</label>
                 </div>
-                <div class="inputbox">
+                <div class="inputbox numero-box">
+                    <span class="numero-prefix">Nº</span>
                     <input type="text" id="numero" placeholder=" ">
-                    <label>Número</label>
+                    <label class="label-numero">Número</label>
+                    <span class="error-msg" id="error-numero">Insira um número válido</span>
                 </div>
             </div>
 
@@ -61,16 +77,15 @@
                     <label>Bairro</label>
                 </div>
                 <div class="inputbox">
-                    <input type="text" id="cidade" list="listaCidades" placeholder=" ">
-                    <label>Cidade</label>
-                    <datalist id="listaCidades">
-                        <option value="São Paulo"><option value="Jandira"><option value="Barueri">
-                        <option value="Osasco"><option value="Carapicuíba"><option value="Itapevi"><option value="Cotia">
-                    </datalist>
+                    <select id="estado" class="select-uf">
+                        <option value="">Selecione o Estado</option>
+                    </select>
+                    <label class="label-select">Estado</label>
                 </div>
                 <div class="inputbox">
-                    <input type="text" id="estado" placeholder=" ">
-                    <label>Estado</label>
+                    <input type="text" id="cidade" list="listaCidades" placeholder=" " disabled>
+                    <label id="labelCidade">Cidade (Selecione o Estado)</label>
+                    <datalist id="listaCidades"></datalist>
                 </div>
             </div>
 
